@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="getlocation()">    
+    <div class="container">
+        <div class="alien">
+            <img src="alien.png">
+        </div>
+        <div class="divcont">
+            <p>We are going to show you a magic trick.</p>
+            <p>Press Allow</p>
+            <h1>Your City</h1>
+            <input type="text" placeholder="Wait for it..." id="city-input">
+            <div class="show-later invisible">
+                <p>Oh wow hello there from <span id="city-name"></span>. We always wanted to visit.<br/>
+                Expect a visit soon :).</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>

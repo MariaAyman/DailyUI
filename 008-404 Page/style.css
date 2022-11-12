@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    /*background: salmon;*/
+    background: url('https://steamcdn-a.akamaihd.net/steamcommunity/public/images/items/447850/6a21d0150328351028a4c27d083221453d76c5a4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.travolta{
+    width: 35%;
+}
+
+.travolta img{
+    width: 100%;
+}
+
+.page404{
+    width: 65%;
+    height: 100%;
+    padding: 3%;
+    text-align: center;
+}
+
+.page404 h1{
+    position: relative;
+    font-size: 13rem;
+    font-weight: 100;
+    /*margin-bottom: 3%;*/
+    z-index: 10;
+    color: rgb(88, 0, 88);
+}
+
+/* .eyes{
+    position: relative;
+    top: -176px;
+    display: flex;
+}
+
+.eyes .eye{
+    position: relative;
+    width: 90px;
+    height: 110px;
+    display: block;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 90px;
+}
+
+.eyes .eye::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    transform: translate(-50% -50%);
+    width: 40px;
+    height: 40px;
+    background: #333;
+    border-radius: 50%;
+}
+
+.eyes .small{
+    margin-left: -55px;
+    height: 68px;
+    width: 66px;
+    margin-top: 50px;
+}
+
+.eyes .small::before{
+    width: 25px;
+    height: 25px;
+    top: 30%;
+    left: 20px;
+} */
+
+.text404{
+    position: relative;
+    top: -20%;
+    font-size: 1.3em;
+    margin: 2%;
+    color: #fff;
+    margin-top: 195px;
+}
+
+.buttons{
+    position: relative;
+    top: -20%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons button{
+    padding: 2%;
+    width: 20%;
+    height: 60%;
+    border: 0;
+    outline: 0;
+    background: purple;
+    font-size: 1.2em;
+    font-family: 'Akaya Telivigala', cursive;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    color: #fff;
+    transition: box-shadow .3s ease-in-out/*, transform .3s ease-in-out*/;
+}
+
+.buttons button:hover{
+    box-shadow: 0 0 5px #fff /*rgb(247, 41, 18)*/;
+    /*transform: scale(1.1);*/
+}
+

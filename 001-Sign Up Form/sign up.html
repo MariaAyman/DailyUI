@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Getting Started</h1>
+    <p>Fill in the form to create an account</p>
+    <div class="container">
+        <form id="sign-up" class="left-part">
+            <!--First Name-->
+            <div class="form-group">
+                <label for="fname" id="fname-label">First Name</label>
+                <input type="text" name="fname" id="fname" class="form-control" placeholder="Frist Name" required>
+            </div>
+
+            <!--Last Name-->
+            <div class="form-group">
+                <label for="lname" id="lname-label">Last Name</label>
+                <input type="text" name="lname" id="lname" class="form-control" placeholder="Last Name" required>
+            </div>
+
+            <!--Email-->
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" name="email" id="email-in" class="form-control" placeholder="mail@example.com" required>
+            </div>
+
+            <!--Password-->
+            <div class="form-group">
+                <label for="pass" id="pass-label">Password</label>
+                <input type="password" name="pass" id="pass-in" class="form-control" placeholder="Password" required>
+                <!--<span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>-->
+            </div>
+
+            <!--Confirm Password-->
+            <div class="form-group">
+                <label for="cpass" id="cpass-label">Confirm Password</label>
+                <input type="password" name="cpass" id="cpass-in" class="form-control" placeholder="Confirm Password" required>
+            </div>
+
+            <!--Remember Me-->
+            <div class="form-group">
+                <label class="main-check">
+                    <input type="checkbox" name="remember" checked>
+                    <span class="geekmark"></span>
+                    Remember Me
+                </label>
+            </div>
+
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a></p>
+
+            <!--Sign Up Button-->
+            <div class="form-group">
+                <button type="submit" id="submit" class="submit-button">Sign Up</button>
+            </div>
+        </form>
+        <div class="right-part">
+            <h3>Or you can Sign Up with your Social Accounts</h3>
+            <button id="face" class="social-buttons"><i class="fab fa-facebook-f"></i> Facebook</button>
+            <button id="google" class="social-buttons"><i class="fab fa-google"></i> Google</button>
+        </div>
+    </div>
+</body>
+</html>

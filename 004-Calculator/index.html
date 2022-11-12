@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="calculator">
+        <div id="screen-div">
+            <input type="text" id="history" readonly dir="rtl">
+            <input type="text" id="screen" placeholder="0" readonly dir="rtl">
+            <!--<i class="fas fa-backspace"></i>-->
+            <span class="fas fa-backspace field-icon" id="backspace"></span>
+        </div>
+        <div class="calc-buttons">
+            <div class="grid-item"><button type="button" id="clear">C</button></div>
+            <div class="grid-item"><button type="button" id="brackets">()</button></div>
+            <div class="grid-item"><button type="button" class="operator" id="percent">%</button></div>
+            <div class="grid-item"><button type="button" class="operator">÷</button></div>
+
+            <div class="grid-item"><button type="button" class="number">7</button></div>
+            <div class="grid-item"><button type="button" class="number">8</button></div>
+            <div class="grid-item"><button type="button" class="number">9</button></div>
+            <div class="grid-item"><button type="button" class="operator">x</button></div>
+
+            <div class="grid-item"><button type="button" class="number">4</button></div>
+            <div class="grid-item"><button type="button" class="number">5</button></div>
+            <div class="grid-item"><button type="button" class="number">6</button></div>
+            <div class="grid-item"><button type="button" class="operator">-</button></div>
+
+            <div class="grid-item"><button type="button" class="number">1</button></div>
+            <div class="grid-item"><button type="button" class="number">2</button></div>
+            <div class="grid-item"><button type="button" class="number">3</button></div>
+            <div class="grid-item"><button type="button" class="operator">+</button></div>
+            
+            <div class="grid-item"><button type="button" class="number">.</button></div>
+            <div class="grid-item"><button type="button" class="number">0</button></div>
+            <div class="grid-item"><button type="button" class="number" id="sign" value="-">+/-</button></div>
+            <div class="grid-item"><button type="button" id="op">=</button></div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <header>
+        <div class="header-menue">
+            <div class="site-logo">
+                <i class="fas fa-guitar"></i>
+            </div>
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search" id="search">
+            </div>
+            <nav class="header-nav">
+                <li class="nav-item">Home</li>
+                <li class="nav-item">About</li>
+                <li class="nav-item">Shop</li>
+                <li class="nav-item">Help</li>
+                <button class="nav-item" id="shopping-cart"><i class="fas fa-shopping-cart"></i> Your Cart</button>
+            </nav>
+        </div>
+        <div class="header-tagline">
+            <div class="tagline">
+                <h1>Musiclele</h1>
+                <p>Music Instruments E-Shop</p>
+                <div class="tag-icons">
+                    <i class="fas fa-drum"></i>
+                    <i class="fas fa-guitar"></i>
+                    <i class="fas fa-drum-steelpan"></i>
+                </div>
+            </div>
+            <button id="shop-now">Shop Now</button>
+        </div>
+    </header>
+    <div class="featured-products">
+        <h1>Featured Products</h1>
+        <div class="slideshow">
+            <div class="slideshow-imgs">
+                <img id="guitar" src="https://pngimg.com/uploads/guitar/guitar_PNG3352.png" class="slideshow-img visible">
+                <img id="piano" src="https://assets.stickpng.com/images/580b585b2edbce24c47b28a7.png" class="slideshow-img visible">
+                <img id="violin" src="https://pngimg.com/uploads/violin/violin_PNG12833.png" class="slideshow-img hidden">
+                <img id="drums" src="https://pngimg.com/uploads/drum/drum_PNG14341.png" class="slideshow-img hidden">
+                <img id="saxophone" src="https://pngimg.com/uploads/trumpet_saxophone/trumpet_saxophone_PNG14756.png" class="slideshow-img hidden">
+                <img id="harmonica" src="data:image/jpeg;base64,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" class="slideshow-img hidden">
+                <img id="clarinet" src="http://assets.stickpng.com/images/5a83059dabc3d121aba71248.png" class="slideshow-img hidden">
+                <img id="bass-guitar" src="https://freepngimg.com/save/9964-bass-guitar-png-hd/1280x856" class="slideshow-img hidden">
+            </div>
+            <div class="slideshow-tags">
+                <p id="guitar-tag" class="slideshow-tag visible">Guitar</p>
+                <p id="piano-tag" class="slideshow-tag visible">Piano</p>
+                <p id="violin-tag" class="slideshow-tag hidden">Violin</p>
+                <p id="drums-tag" class="slideshow-tag hidden">Drums</p>
+                <p id="saxophone-tag" class="slideshow-tag hidden">Saxophone</p>
+                <p id="harmonica-tag" class="slideshow-tag hidden">Harmonica</p>
+                <p id="clarinet-tag" class="slideshow-tag hidden">Clarinet</p>
+                <p id="bass-guitar-tag" class="slideshow-tag hidden">Bass Guitar</p>
+            </div>
+            <div class="slideshow-prices">
+                <p id="guitar-price" class="slideshow-price visible">$562</p>
+                <p id="piano-price" class="slideshow-price visible">$4,500</p>
+                <p id="violin-price" class="slideshow-price hidden">$1,000</p>
+                <p id="drums-price" class="slideshow-price hidden">$1,000</p>
+                <p id="saxophone-price" class="slideshow-price hidden">$800</p>
+                <p id="harmonica-price" class="slideshow-price hidden">$800</p>
+                <p id="clarinet-price" class="slideshow-price hidden">$800</p>
+                <p id="bass-guitar-price" class="slideshow-price hidden">$100</p>
+            </div>
+            <a class="prev arrow">&#10094;</a>
+            <a class="next arrow">&#10095;</a>
+        </div>
+    </div>
+    <div class="newsletter">
+        <h1>Newsletter</h1>
+        <div>
+            <p>You can subscribe to get more information and be up-to-date with our sales</p>
+            <div class="email-div">
+                <input type="email" id="email" placeholder="Email Address">
+                <button id="subscribe">Subscribe</button>
+            </div>
+        </div>
+    </div>
+    <div class="about-shop">
+        <h1>About Our Shop</h1>
+        <p>Musiclele is an online shop selling music instruments for all the music lovers out there.</p>
+    </div>
+    <div class="last-menue">
+        <div class="logo-address">
+            <i class="fas fa-guitar"></i>
+            <p>1717 Harrison St.San Francisco, CA 94103, USA</p>
+        </div>
+        <div class="main-menue">
+            <p class="last-p">Main Menu</p>
+            <li class="main-item">Home</li>
+            <li class="main-item">About</li>
+            <li class="main-item">Shop</li>
+            <li class="main-item">Help</li>
+        </div>
+        <div class="company">
+            <p class="last-p">Company</p>
+            <li class="company-item">The Company</li>
+            <li class="company-item">Careers</li>
+            <li class="company-item">Press</li>
+        </div>
+        <div class="discover">
+            <p class="last-p">Discover</p>
+            <li class="discover-item">The Team</li>
+            <li class="discover-item">Our History</li>
+            <li class="discover-item">Brand Motto</li>
+        </div>
+        <div class="social">
+            <p class="last-p">Find Us on</p>
+            <li class="social-item"><i class="fab fa-facebook"></i></li>
+            <li class="social-item"><i class="fab fa-twitter"></i></li>
+            <li class="social-item"><i class="fab fa-instagram"></i></li>
+        </div>
+    </div>
+    <footer>
+        <i class="fas fa-copyright"></i>
+        <p>Musiclele</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

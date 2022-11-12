@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="full-container">
+        <div class="front-container">
+            <div id="visa-logo">
+                <h2>Credit Card</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="visa">
+            </div>
+            <form>
+                <!--Card Number-->
+                <div class="form-group">
+                    <label for="card-number" class="form-label">Card Number</label>
+                    <input type="text" maxlength="4" placeholder="0000" name="card-number" id="card-number1" class="form-input" required>
+                    <input type="text" maxlength="4" placeholder="0000" name="card-number" id="card-number2" class="form-input" required>
+                    <input type="text" maxlength="4" placeholder="0000" name="card-number" id="card-number3" class="form-input" required>
+                    <input type="text" maxlength="4" placeholder="0000" name="card-number" id="card-number4" class="form-input" required>
+                </div>
+                <!--Full Name-->
+                <div class="form-group">
+                    <label for="fname" class="form-label">Full Name</label>
+                    <input type="text" placeholder="Ex.John Matthews Doe" name="fname" id="fname" class="form-input" required>
+                </div>
+                <!--Expiration Date-->
+                <div class="form-group">
+                    <label for="exp-date" class="form-label">Expiration Date</label>
+                    <input type="month" name="exp-date" id="exp-month" class="form-input" required>
+                </div>
+            </form>
+        </div>
+        <div class="back-container">
+            <div id="black-bar"></div>
+            <form>
+                <!--CvV (back of the card)-->
+                <div class="form-group">
+                    <label for="cvv" class="form-label">CVV</label>
+                    <input type="text" maxlength="3" placeholder="000" name="cvv" id="cvv" class="form-input" required> 
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Submit-->
+    <div id="submit">
+        <button type="submit" id="subtn">Submit</button>
+    </div>
+</body>
+</html>

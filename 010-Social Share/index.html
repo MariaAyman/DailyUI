@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Share</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="scripts/socialCircle.js"></script>
+
+</head>
+<body>
+    <div class="share-button">
+        <div class="icons">
+            <a class="icon facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+            <a class="icon twitter" href="#"><i class="fab fa-twitter"></i></a>
+            <a class="icon pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a class="icon linkedin" href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a class="icon dribbble" href="#"><i class="fab fa-dribbble"></i></a>
+            <button id="share" class ="share-off closed" type="button"><i class="fas fa-share-square"></i></button>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        let share = document.querySelector('#share');
+        share.addEventListener('click', () => {
+            if(share.classList.contains('share-off')){
+                share.classList.remove('share-off');
+                share.classList.add('share-on');
+            }
+            else{
+                share.classList.remove('share-on');
+                share.classList.add('share-off');
+            }
+        });
+
+        $('#share').socialCircle({
+            rotate: 90,
+            radius: 140,
+            circleSize: 2,
+            speed: 500
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background: linear-gradient(to right, #2c5364, #203a43, #0f2027);*/
+    background: url('https://thehoneypop.com/wp-content/uploads/2020/08/image0-1.jpg') no-repeat center center fixed;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-position-y: 80%;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox{
+    width: 250px;
+    height: 80px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 50px;
+    position: relative;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.295),
+            inset 0 10px 10px rgba(0, 0, 0, 0.295);
+    z-index: 100;        
+}
+
+.inputBox div{
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: url('//cdn.shopify.com/s/files/1/0382/4185/files/fly-hearts.gif?675304149355108345');
+    position: absolute;
+}
+
+.inputBox input{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline: none;
+    -webkit-appearance: none;
+    position: absolute;
+}
+
+.inputBox label{
+    /*font-size: 2.8rem;
+    color: goldenrod;*/
+    width: 85px;
+    height: 100px;
+    border-radius: 100%; 
+    position: absolute;
+    cursor: pointer;
+    transform: translate(-6px, -8px);
+    transition: transform .4s ease;
+}
+
+.inputBox label img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.inputBox input:checked ~ label{
+    transform: translate(180px, -8px);
+}
+
+.spotlight{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, transparent 120px, rgba(0, 0, 0, 0.85) 160px);
+}
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}

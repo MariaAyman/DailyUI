@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                     url('https://imgix.bustle.com/uploads/getty/2020/4/25/ba433b45-1ae3-4757-a7bb-239cf56d3fd5-getty-1218538177.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg')
+                     no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    font-family: 'Yusei Magic', sans-serif;                 
+}
+
+body h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5rem;
+}
+
+body p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: .8rem;
+}
+
+.container{
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4));
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*margin: 20px;
+    padding: 30px;*/
+    margin: 1.95% auto;
+    padding: 2.93%;
+    width: 1000px;
+}
+
+form{
+    padding: 20px;
+    /*display: flex;
+    flex-direction: column;*/
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.form-group input{
+    border: 3px solid black;
+    color: rgb(231, 110, 255);
+    border-radius: 20px;
+    padding: 5px;
+    font-family: 'Yusei Magic', sans-serif;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group input:focus{
+    border-color: rgb(231, 110, 255);
+    box-shadow: 0 0 0 0.2rem rgba(247, 0, 255, 0.25);
+    outline: 0;
+}
+
+/*Password eye*/
+/*.field-icon {
+    float: right;
+    margin-left: -100px;
+    margin-top: -5px;
+    position: relative;
+    z-index: 2;
+    color: black;
+}*/
+
+form p a{
+    color: rgb(231, 110, 255);
+    text-decoration: none;
+    transition: text-shadow 0.3s;
+}
+
+form p a:hover{
+    text-shadow: 0 0 10px rgb(231, 110, 255);
+}
+
+form p a:visited{
+    color:  rgba(247, 0, 255, 0.25);
+}
+
+.form-group #submit{
+    background-color: rgb(231, 110, 255);
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 2%;
+    color: white;
+    font-size: 1.3em;
+    font-family: 'Yusei Magic', sans-serif;
+    border: 3px solid black;
+    border-radius: 30px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-group #submit:hover{
+    border-color: rgb(231, 110, 255);
+    box-shadow: 0 0 0 0.2rem rgba(247, 0, 255, 0.25);
+    outline: 0;
+    cursor: pointer;
+}
+
+.right-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    margin: 10px;
+    padding: 5%;
+}
+
+.right-part h3{
+    margin-bottom: 30px;
+    color: rgb(231, 110, 255);
+}
+
+.social-buttons{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 3%;
+    margin-bottom: 10%;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Yusei Magic', sans-serif;
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.social-buttons:nth-of-type(1){
+    background-color: #3b5998;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.social-buttons:nth-of-type(1):hover{
+    border-color: blue;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: 0;
+    cursor: pointer;
+}
+
+.social-buttons:nth-of-type(2){
+    background-color: #ff3e30;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.social-buttons:nth-of-type(2):hover{
+    border-color: red;
+    box-shadow: 0 0 0 0.2rem rgba(255, 62, 48, 0.25);
+    outline: 0;
+    cursor: pointer;
+}

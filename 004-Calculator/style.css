@@ -1,0 +1,101 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Farro:wght@500&display=swap');*/
+
+:root{
+    --calcBack: rgba(255, 255, 255, 0.2);
+    --calcBackPicker: #434343;
+    --calcBorder: #bbbfc0; /*Border color and screen*/
+    --bodyBack: #141414;
+    --royalBlueHex: #4169e1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*background: var(--bodyBack);*/
+    background: linear-gradient(royalblue, rgb(148, 168, 228));
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    font-family: 'Farro', sans-serif;
+}
+
+#calculator{
+    /*border: 2px solid var(--calcBorder);*/
+    border: 5px solid var(--calcBackPicker);
+    max-width: 20rem;
+    padding: 2.5em 2em;
+    /*background: var(--calcBack);*/
+    background: var(--calcBorder);
+    border-radius: 2em;
+    color: royalblue;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19); /*h.offset, v.offset, blur, spreadRaduis, color*/
+    
+}
+
+#history{
+    width: 100%;
+    outline: 0;
+    line-height: 40px;
+    background-color: var(--calcBorder);
+    border: 0;
+    color: gray;
+}
+
+#screen{
+    width: 100%;
+    line-height: 100px;
+    font-size: 40px;
+    outline: 0;
+    background-color: var(--calcBorder);
+    border: 0;
+    padding-right: 5px;
+    color: royalblue;
+}
+
+.field-icon{
+    float: right;
+    margin-left: -15px;
+    margin-top: -19px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.calc-buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    /*padding-top: 10px;*/
+}
+
+.grid-item{
+    text-align: center;
+    /*padding: 5px;*/
+}
+
+.grid-item button{
+    /*background: var(--calcBack);*/
+    /*background: var(--calcBorder);*/
+    background-color: royalblue;
+    width: 70%;
+    border: 0;
+    font-size: 20px; /*initial 30px*/
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    outline: 0;
+    /*border: 2px solid var(--royalBlueHex);*/
+    border-radius: 50%;
+}
+
+#op, #clear{
+    /*background-color: royalblue;*/
+    background: var(--calcBackPicker);
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="show-alert">
+        <button class="error-button">Error Message</button>
+        <button class="success-button">Success Message</button>
+    </div>
+    <div class="show-messages">
+        <div class="alert-error" style="visibility: hidden;">
+            <div class="alert-img">
+                <img src="https://64.media.tumblr.com/4bbfc7359f8a22e67f65e1a7bcef1a6e/tumblr_n38omgcyjD1rstq9ro2_250.gif" alt="Dude No">
+            </div>
+            <div class="alert-message">
+                <span id="close-error">&times;</span>
+                <p>Oops! looks like there is an error, maybe try again.</p>
+            </div>
+            <div class="alert-button try-again">
+                <button>Try Again</button>
+            </div>
+        </div>
+        <div class="alert-success" style="visibility: hidden;">
+            <div class="alert-img">
+                <img src="https://64.media.tumblr.com/5b2fe2987028c52ab1e55cb34af7f0c9/tumblr_n38omgcyjD1rstq9ro1_250.gif" alt="Dude No">
+            </div>
+            <div class="alert-message">
+                <span id="close-success">&times;</span>
+                <p>Mission Passed, You can carry on my wayward son.</p>
+            </div>
+            <div class="alert-button continue">
+                <button>Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

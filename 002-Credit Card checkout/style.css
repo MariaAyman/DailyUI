@@ -1,0 +1,155 @@
+/*
+colors:
+       gold: #c79f4b
+       gold img picker: #c39130
+       brown: #a67e2e
+       blue: #375d81
+       dark blue: #183152
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*html,body{
+    height: 100%;
+}*/
+
+body{
+    background-color: #fdf9ef;
+}
+
+.full-container{
+    width: 80%;
+    height: 255px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.front-container{
+    background-color: #c39130;
+    border-radius: 15px;
+    padding: 2%;
+    color: #000;
+    width: 35%;
+    height: 100%;
+    box-shadow: 0 0 20px #c79f4b;
+}
+
+.front-container #visa-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.front-container #visa-logo img{
+    width: 15%;
+    padding-right: 3%;
+}
+
+.front-container #visa-logo h2{
+    padding-left: 3%;
+}
+
+.form-group{
+    margin: 2%;
+    padding: 1%;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 1%;
+}
+
+.form-input{
+    outline: 0;
+    background: #c39130;
+    border: 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+input[name="card-number"]{
+    width: 20%;
+}
+
+.back-container{
+    background-color: #c39130;
+    border-radius: 15px;
+    padding: 2%;
+    color: #000;
+    width: 35%;
+    height: 100%;
+    box-shadow: 0 0 20px #c79f4b;
+}
+
+.back-container #black-bar{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#cvv{
+    width: 30%;
+}
+
+#submit{
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+#submit #subtn{
+    width: 200px;
+    height: 50px;
+    font-size: 1.5em;
+    color: #c39130;
+    background-color: #000;
+    border-radius: 20px;
+    border: none;
+    transition: box-shadow .5s ease-in, transform .5s ease-in-out;
+}
+
+#submit #subtn:hover{
+    box-shadow: 0 0 40px #c79f4b;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media(max-width: 875px){
+    .full-container{
+        flex-direction: column;
+        margin-top: 50%;
+        align-items: center;
+    }
+
+    .front-container,.back-container{
+        margin-bottom: 10%;
+        width: 90%;
+    }
+
+    #submit{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20%;
+    }
+
+    .form-input{
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    input[name="card-number"]{
+        margin-right: 10px;
+    }
+}

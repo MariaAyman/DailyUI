@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+/*
+color:
+    red aether: #c6202c
+    blue aether: #65c7f8
+    darker blue aether: #2b5faa
+    blue background: #1c6ab5
+    black spine1: #0e0e0d
+
+    smoke bg: https://wallpapercave.com/wp/wp5836583.jpg
+    smoke bg like: https://cutewallpaper.org/21/blue-smoke-backgrounds/Red-And-Blue-Smoke-Stock-Video-Motion-Array.jpg
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0e0e0d;
+}
+
+header nav{
+    margin-right: 2%;
+    width: 60%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li{
+    margin-left: 5%;
+    font-size: 2rem;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: text-shadow .3s;
+}
+
+header nav ul li a:hover{
+    color: #c6202c;
+    text-shadow: 0 0 20px #65c7f8;
+}
+
+#order, #submit{
+    background: #0e0e0d;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2%;
+    border-radius: 30px;
+    transition: box-shadow .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+#order:hover, #submit:hover{
+    cursor: pointer;
+    background-color: #c6202c;
+    box-shadow: 0 0 20px #65c7f8;
+}
+
+#first-sec{
+    background: url('https://cutewallpaper.org/21/blue-smoke-backgrounds/Red-And-Blue-Smoke-Stock-Video-Motion-Array.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#book-img{
+    width: 60%;
+}
+
+
+section #book-img img{
+    width: 100%;
+    /*height: 450px;*/
+}
+
+section #book-desc{
+    margin-right: 5%;
+    padding: 2%;
+    text-align: center;
+}
+
+section #book-desc p{
+    font-size: 1.5rem;
+}
+
+section #book-desc p span{
+    color: #c6202c;
+    text-shadow: 0 0 5px #65c7f8;
+}
+
+footer{
+    background-color: #0e0e0d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+footer input{
+    margin-bottom: 10px;
+    width: 30%;
+    font-size: 1.2rem;
+    padding: 1%;
+    border-radius: 30px;
+    outline: 0;
+    border: 0;
+    transition: box-shadow .3s ease-in-out , background-color .3s ease-in-out;
+}
+
+footer input:focus{
+    color: #fff;
+    background-color: #c6202c;
+    box-shadow: 0 0 20px #65c7f8;
+}
+
+#submit{
+    margin-bottom: 20px;
+}
+
+#social-btns{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+#social-btns i:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+
+#social-btns i:nth-child(1):hover{
+    color: #3b5998;
+}
+
+#social-btns i:nth-child(2):hover{
+    color: #dd2a7b;
+}
+
+#social-btns i:nth-child(3):hover{
+    color: #00acee;
+}
+
+@media(max-width: 760px){
+    header nav ul li{
+        font-size: 1rem;
+        margin-left: 3%;
+    }
+
+    #order{
+        font-size: 1rem;
+    }
+}
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="settings-page">
+        <div class="bar">
+            <i class="fas fa-bars"></i>
+            <span>Settings</span>
+        </div>
+        <div class="container">
+            <div class="menue">
+                <div class="view-profile">
+                    <div class="profile-pic">
+                        <img src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="profile-pic">
+                    </div>
+                    <div class="profile-name">
+                        <div class="name">Elizabeth Eliott</div>
+                        <div class="view">View Profile <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                </div>
+                <div class="menue-element" id="menu1"><i class="fas fa-user-circle"></i> <a onclick="update1()" class="id-link" href="#profile">Profile</a></div>
+                <div class="menue-element" id="menu2"><i class="fas fa-bell"></i> <a onclick="update2()" class="id-link" href="#notifications">Notifications</a></div>
+                <div class="menue-element" id="menu3"><i class="fas fa-unlock"></i> <a onclick="update3()" class="id-link" href="#security">Privacy & Security</a></div>
+                <div class="menue-element" id="menu4"><i class="fas fa-sign-out-alt"></i> <a onclick="update4()" class="id-link" href="#">Log out</a></div>
+            </div>
+            <div class="settings">
+                <div id="profile" class="settings-element visible">
+                    <div class="change-profile">
+                        <img src="https://images.unsplash.com/photo-1532074205216-d0e1f4b87368?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjN8fHByb2ZpbGV8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80">
+                        <button>Change Profile</button>
+                    </div>
+                    <form class="profile-details">
+                        <div class="form-item" id="name-item">
+                            <label for="fname">First Name</label>
+                            <input id="fname" name="fname" type="text" value="Elizabeth">
+                            <label for="lname">Last Name</label>
+                            <input id="lname" name="lname" type="text" value="Eliott">
+                        </div>
+                        <div class="form-item" id="email-item">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" value="elizabethEliott@gmail.com">
+                        </div>
+                        <div class="form-item" id="phone-number">
+                            <label for="phone">Phone Number</label>
+                            <input id="phone" name="phone" type="text" value="123-444-6667">
+                        </div>
+                        <div class="form-item" id="password">
+                            <label for="pass" style="margin-right: 120px;">Password</label>
+                            <input id="pass" name="pass" type="password" value="1234eliEliott">
+                            <i class="fas fa-eye" id="eye"></i>
+                        </div>
+                    </form>
+                    <button class="save-changes">Save</button>
+                </div>
+                <div id="notifications" class="settings-element hidden">
+                    <div class="web-notification">
+                        <h3>Web Notifications</h3>
+                        <form class="notification-details">
+                            <input type="checkbox" id="web1" name="web1" value="NotifyWeb">
+                            <label for="web1">Enable Direct Push Notifications</label><br>
+                            <input type="checkbox" id="web2" name="web2" value="SoundWeb">
+                            <label for="web2">Enable sound for Notifications</label><br>
+                        </form>
+                    </div>
+                    <div class="email-notification">
+                        <h3>Email Notifications</h3>
+                        <form class="notification-details">
+                            <input type="checkbox" id="email1" name="email1" value="NotifyEmail">
+                            <label for="email1">Enable Direct Email Notifications</label><br>
+                        </form>
+                    </div>
+                </div>
+                <div id="security" class="settings-element hidden">
+                    <form class="security-details">
+                        <h3>Cookies and Website data</h3>
+                        <div class="radio-buttons">
+                            <input type="radio" id="allow" name="cookies" value="allow">
+                            <label for="allow">Allow Cookies</label><br>
+                            <input type="radio" id="block" name="cookies" value="block">
+                            <label for="block">Block Cookies</label><br>
+                            <button id="webData">Manage Website Data</button>
+                        </div>
+                    </form>
+                    <form class="security-details">
+                        <h3>Location Services</h3>
+                        <div class="radio-buttons">
+                            <input type="radio" id="once" name="location" value="once">
+                            <label for="once">Prompet once each day</label><br>
+                            <input type="radio" id="oneTime" name="location" value="oneTime">
+                            <label for="oneTime">Prompet one time only</label><br>
+                            <input type="radio" id="deny" name="location" value="deny">
+                            <label for="deny">Deny without Prompting</label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

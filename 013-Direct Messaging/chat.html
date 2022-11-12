@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Messages</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="container-header">
+            <figure class="avatar">
+                <img id="magnus" src="https://64.media.tumblr.com/b491bf0309a28b4d80c093ec326766f1/71650b9ad4a9666f-76/s250x400/ca0991868bb0dfb428375796df7c616a25538796.png">
+            </figure>
+            <div id="last-seen" style="width: 60%; font-size: 1.5rem;">
+                <p>Chats</p>
+            </div>
+            <div id="call-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-ellipsis-v"></i>
+            </div>
+        </div>
+        <div class="messages-display display-chat">
+            <!--Group chat-->
+            <a href="index.html">
+                <div class="chat">
+                    <figure id="profile-pic" class="avatar">
+                        <img src="https://i.pinimg.com/originals/89/fa/c7/89fac77a3d9287d6c7bcafd0f90715ab.jpg">
+                    </figure>
+                    <div class="last-message">
+                        <p class="chat-name">Annoying People (Except Alexander)</p>
+                        <p><b>Jace:</b> We were out of Doritos.</p>
+                    </div>
+                    <div class="last-timestamp">
+                        <p>6:20 pm</p>
+                        <p><br></p>
+                    </div>
+                </div>
+            </a>
+            <!--Raphael-->
+            <div class="chat">
+                <figure id="raphael" class="avatar">
+                    <img src="https://64.media.tumblr.com/45bb00db36e15bf3363eea715ed12018/tumblr_orz775bsSM1wnlk82o9_400.jpg">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Annoying Vampire</p>
+                    <p>Dios mio.</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>4:00 pm</p>
+                    <p class="unread">1</p>
+                </div>
+            </div>
+            <!--Alec-->
+            <div class="chat">
+                <figure id="alec" class="avatar">
+                    <img src="https://i.pinimg.com/originals/d3/a0/ba/d3a0ba878aba69486b1a9ff5a6038fbd.jpg">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Alexander</p>
+                    <p>Magnus, why are you laughing?</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>3:30 pm</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <!--Clary-->
+            <div class="chat">
+                <figure id="clary" class="avatar">
+                    <img src="https://64.media.tumblr.com/539a8ac70178b993bc1d1be9b9e3dd86/71650b9ad4a9666f-f8/s250x400/127235b663482616957c6bd42b0dcb02018957eb.png">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Biscuit</p>
+                    <p>WHAT??</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>2:00 pm</p>
+                    <p class="unread">1</p>
+                </div>
+            </div>
+            <!--Simon-->
+            <div class="chat">
+                <figure id="simon" class="avatar">
+                    <img src="https://64.media.tumblr.com/b1f03c88662214815a82484c8e1e8124/71650b9ad4a9666f-29/s250x400/c8ea73e3a370187e0c6ca360297b302a755cc9ed.png">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Sherwin</p>
+                    <p>Theres blood in the fridge.</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>1:45 pm</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <!--Jace-->
+            <div class="chat">
+                <figure id="jace" class="avatar">
+                    <img src="https://64.media.tumblr.com/e7e3179f9ba12591b6d8c8d48f23f4a2/71650b9ad4a9666f-db/s250x400/3ab7050c35a8ad37cbe84f7ce7ce3461cd00af55.png">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Herondale!</p>
+                    <p>I'm Magnus Bane, and u know it</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>1:00 pm</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <!--Luke-->
+            <div class="chat">
+                <figure id="luke" class="avatar">
+                    <img src="https://pbs.twimg.com/profile_images/721785578774269953/8A8g_Zsq_400x400.jpg">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Lucian</p>
+                    <p>... almost anything.</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>12:18 pm</p>
+                    <p><br></p>
+                </div>
+            </div>
+            <!--Maia-->
+            <div class="chat">
+                <figure id="maia" class="avatar">
+                    <img src="https://64.media.tumblr.com/20a7d1e32d212dedb318becf88a7a64c/tumblr_p71nwc4SNH1xpejh9o2_400.jpg">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Maia</p>
+                    <p>See you soon.</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>10:00 am</p>
+                    <p class="unread">1</p>
+                </div>
+            </div>
+            <!--Izzy-->
+            <div class="chat">
+                <figure id="izzy" class="avatar">
+                    <img src="https://64.media.tumblr.com/3fe00641ad8a2bb370957acf895fd3b9/71650b9ad4a9666f-8d/s250x400/4671c910c14c6d28e3666b86825c1d7ecb20dfa1.png">
+                </figure>
+                <div class="last-message">
+                    <p class="chat-name">Dear Isabelle</p>
+                    <p>Is Alec with you??</p>
+                </div>
+                <div class="last-timestamp">
+                    <p>9:20 am</p>
+                    <p class="unread">1</p>
+                </div>
+            </div>
+        </div>
+        <div class="new-chat">
+            <i class="fas fa-plus"></i>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f4f4f4;
+    font-family: 'Indie Flower', cursive;
+}
+
+header{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+        /*url('https://thumbs.dreamstime.com/b/golden-musical-notes-white-background-clef-golden-musical-notes-melody-white-background-abstract-melody-clef-167774461.jpg');*/
+        url('https://a.rgbimg.com/users/x/xy/xymonau/600/nxXAxnc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position-y: 85%;  
+}
+
+.header-menue{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.site-logo{
+    width: 5%;
+    text-align: center;
+    margin: 0 2%;
+}
+.site-logo i,
+.logo-address i{
+    font-size: 45px;
+    color: gold;
+}
+
+.search-bar{
+    width: 30%;
+    margin-right: 2%;
+    height: 60%;
+}
+.search-bar i{
+    position: absolute;
+    top: 34px;
+    right: 62%;
+    cursor: pointer;
+}
+.search-bar input,
+.email-div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-family: 'Indie Flower', cursive;
+    background: gold;
+    border-radius: 20px;
+    padding-left: 2%;
+    transition: box-shadow .3s ease-in-out;
+}
+.email-div input{
+    width: 30%;
+    height: 30px
+}
+.search-bar input:focus,
+.email-div input:focus{
+    box-shadow: 0 0 3px 3px #000;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-left: 5%;
+}
+.header-nav li{
+    list-style: none;
+    margin-left: 4%;
+    font-size: 20px;
+    transition: transform .3s ease-in-out,
+                text-shadow .3s ease-in-out;
+}
+.header-nav li:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 0 0 6px gold;
+}
+.header-nav button,
+#shop-now,
+.email-div button{
+    border: 0;
+    outline: 0;
+    width: 100px;
+    height: 50px;
+    background: gold;
+    border-radius: 15px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 15px;
+    transition: box-shadow .3s ease-in-out;
+}
+.header-nav button:hover,
+#shop-now:hover,
+.email-div button:hover{
+    box-shadow: 0 0 3px 3px #000;
+    cursor: pointer;
+}
+
+.header-tagline{
+    width: 100%;
+    height: 85%;
+    text-align: center;
+}
+
+.tagline{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tagline h1{
+    font-size: 70px;
+    color: gold;
+    text-shadow: 0 0 4px #000;
+}
+.tagline p{
+    font-size: 25px;
+    text-shadow: 0 0 4px gold;
+}
+.tagline .tag-icons{
+    width: 50%;
+    height: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    color: gold;
+}
+.tagline .tag-icons i{
+    text-shadow: 0 0 4px #000;
+}
+
+.featured-products,
+.newsletter,
+.about-shop{
+    text-align: center;
+    padding: 2%;
+}
+.featured-products h1,
+.newsletter h1,
+.about-shop h1{
+    color: gold;
+    text-shadow: 0 0 4px #000;
+}
+.featured-products .slideshow{
+    padding: 2%;
+    position: relative;
+    margin: 1em auto .5em auto;
+    max-width: 90%;
+    height: 90%;
+    box-shadow: 0 0 5px #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slideshow-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    height: 300px;
+}
+.slideshow-imgs img,
+.slideshow-tags p,
+.slideshow-prices p{
+    padding: 2%;
+    width: 40%;
+    height: 100%;
+    background: #eee;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),
+                -3px -3px 7px  rgba(255, 255, 255, .05);
+}
+.slideshow-prices p{
+    background: gold;
+}
+.slideshow-tags,
+.slideshow-prices{
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 0 0 4px gold;
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}
+
+.arrow{
+    display: inline;
+}
+.prev,
+.arrow{
+    color: gold;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin: -1em .3em 0 .3em;
+    padding: .5em;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: .3s ease;
+    user-select: none;
+}
+.next{
+    right: 0;
+}
+.prev{
+    left: 0;
+}
+.prev:hover,
+.next:hover{
+    text-shadow: 0 0 5px #000;
+}
+
+.newsletter p,
+.about-shop p{
+    font-size: 20px;
+    text-shadow: 0 0 6px gold;
+}
+
+.last-menue{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
+}
+.last-menue .logo-address{
+    align-self: center;
+    text-align: left;
+    width: 200px;
+}
+.logo-address p{
+    padding-top: 3%;
+}
+.last-p{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: gold;
+    text-shadow: 0 0 2px #000;
+}
+.main-item,
+.company-item,
+.discover-item,
+.social-item{
+    font-size: 18px;
+    transition: transform .3s ease-in-out,
+                text-shadow .3s ease-in-out;
+}
+
+.main-item:hover,
+.company-item:hover,
+.discover-item:hover,
+.social-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.main-item:hover,
+.company-item:hover,
+.discover-item:hover{
+    text-shadow: 0 0 6px gold;
+}
+.social-item{
+    font-size: 23px;
+}
+.fa-facebook{
+    color: #3b5998;
+}
+.fa-twitter{
+    color: #00acee;
+}
+.fa-instagram{
+    color: #dd2a7b;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    padding: .5%;
+    margin-top: 2%;
+    background: gold;
+    color: #fff;
+}
+footer i{
+    padding-right: 2%;
+}
